@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JWT Decode</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <script src="./index.js"></script>
+</head>
+
+<body class="has-background-warning-light">
+    <p id="op"></p>
+    <h1 class="title has-text-centered is-size-1 pt-5" id="h1">JWT Encoder & Decoder</h1>
+    <div class="container is-fluid mb-5">
+        <div class="columns is-centered">
+            <div class="column is-half">
+                <div class="box">
+                    <h1 class="title has-text-centered">Encoded JWT</h1>
+                    <textarea class="textarea is-primary" rows="15" id="outputarea">
+{
+    "header": {
+        "typ": "JWT"
+    },
+    "payload": {
+        "id": "shubhamsomwanshi11",
+        "company": "CodeBeautify",
+        "website": "https://codebeautify.org/"
+    }
+}
+                    </textarea>
+                    <div class="columns is-centered">
+                        <div class="column is-half has-text-centered">
+                            <button class="button is-primary is-medium mt-5" onclick="Encode()">Encode</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-half">
+                <div class="box">
+                    <h1 class="title has-text-centered">Decoded JWT</h1>
+                    <textarea class="textarea is-primary" rows="15"
+                        id="inputarea">eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0=.eyJpZCI6InNodWJoYW1zb213YW5zaGkxMSIsImNvbXBhbnkiOiJDb2RlQmVhdXRpZnkiLCJ3ZWJzaXRlIjoiaHR0cHM6Ly9jb2RlYmVhdXRpZnkub3JnLyJ9.</textarea>
+                    <div class="columns is-centered">
+                        <div class="column is-half has-text-centered">
+                            <button class="button is-primary is-medium mt-5" onclick="Decode()">Decode</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
